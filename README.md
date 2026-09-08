@@ -2,9 +2,6 @@
 
 An end-to-end Business Intelligence project that ingests **live data from the Transport for London (TfL) API**, models it into a star schema, and visualizes service reliability in an interactive Power BI dashboard.
 
-![Dashboard Overview](screenshots/overview.png)
-<!-- Replace with your actual screenshot filenames once added to a /screenshots folder -->
-
 **[Live Dashboard →](https://noidainstituteofengtech-my.sharepoint.com/:u:/g/personal/0221csds219_niet_co_in/IQBICNlK61-ORod-zz1b7ML3ARKhcShP-IdblKfvVsry0Ts)** <!-- Add your Power BI "Publish to Web" link here once published -->
 
 ---
@@ -50,6 +47,9 @@ fact_arrivals
 ## Key insight
 
 <!-- Fill in your own real numbers here from the finished dashboard -->
+Night bus routes (N113, N118, N7, and others) show average wait times of 18-24 minutes — among the highest in the dataset — while Thames river-bus piers like Waterloo Pier and Millbank Pier top the list of slowest-served stops overall, both reflecting significantly lower service frequency than day buses or the Underground. Average wait time across all 1,135 tracked arrivals follows a clear daily pattern, dropping to its lowest around 4-5pm before climbing sharply into the evening as night services take over.
+
+
 Across the tracked stops, average wait time is noticeably higher during the evening peak window (4–7pm) than off-peak, and river-bus/bus stops account for the majority of captured volume in this run, with average wait times trending higher at riverside piers than at central Underground stations.
 
 ## Setup
