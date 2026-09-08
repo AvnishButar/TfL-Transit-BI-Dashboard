@@ -1,86 +1,102 @@
-# TfL-Transit-BI-Dashboard
+# Live TfL Transit Dashboard — Data Pipeline
 
+Builds a real, growing dataset of live London Underground/bus arrivals for a
+BI portfolio project. This is Phase 1 (data pipeline). Phase 2 is connecting
+Power BI or Tableau to the SQLite database and building the dashboard.
 
-An end-to-end Business Intelligence project that ingests **live data from the Transport for London (TfL) API**, models it into a star schema, and visualizes service reliability in an interactive Power BI dashboard.
+## What this does
 
-![Dashboard Overview](screenshots/overview.png)
-<!-- Replace with your actual screenshot filenames once added to a /screenshots folder -->
-
-**[Live Dashboard →](https://noidainstituteofengtech-my.sharepoint.com/:u:/g/personal/0221csds219_niet_co_in/IQBICNlK61-ORod-zz1b7ML3ARKhcShP-IdblKfvVsry0Ts?e=aGko1x)** <!-- Add your Power BI "Publish to Web" link here once published -->
-
----
-
-## What this project does
-
-Most portfolio dashboards use a static Kaggle CSV. This one doesn't — it pulls **live, constantly-changing arrival data** for buses, the Underground, river-boats, and DLR across London, storing a fresh snapshot every few minutes to build a real time-series dataset. The result is a dashboard that reflects actual operational patterns: which lines run less predictably, how wait times shift through the day, and which stops see the most service.
-
-## Tech stack
-
-- **Python** — API integration, ETL, scheduled data collection
-- **SQLite** — star-schema data warehouse
-- **TfL Unified API** — live arrivals data source
-- **Power BI** — data modeling (DAX), dashboard design
-- **Windows Task Scheduler** — automated recurring data collection
-
-## Data model
-
-The database follows a standard star schema:
-
-```
-fact_arrivals
-├── line_id      → dim_line (line_name, mode)
-├── station_id   → dim_station (station_name)
-└── time_id      → dim_time (date, hour, day_of_week, is_peak)
-```
-
-`fact_arrivals` stores one row per live arrival prediction, including the time-to-arrival in seconds (`time_to_station_sec`) and when it was captured (`pulled_at`).
-
-## How it works
-
-1. **`fetch_tfl.py`** resolves a list of station names to TfL StopPoint IDs (across all transport modes: tube, bus, DLR, river-bus, overground), then calls the live Arrivals API for each and inserts the results into `tfl_data.db`.
-2. **Windows Task Scheduler** runs this script automatically every 10–15 minutes, so the dataset keeps growing on its own without manual intervention.
-3. **`export_to_csv.py`** exports the four star-schema tables to CSV for a clean, driver-free Power BI import.
-4. **Power BI** models the relationships, calculates DAX measures (avg wait time, peak vs off-peak, arrivals volume), and renders the dashboard.
-
-## Dashboard pages
-
-**Overview** — KPI cards (total arrivals tracked, average wait time), a live trend line of wait time by hour, and a mode/station slicer for interactivity.
-
-**Deep Dive** — Worst-performing stops by average wait time, peak vs off-peak comparison, a per-line performance table, and a breakdown of data volume by transport mode.
-
-## Key insight
-
-<!-- Fill in your own real numbers here from the finished dashboard -->
-Across the tracked stops, average wait time is noticeably higher during the evening peak window (4–7pm) than off-peak, and river-bus/bus stops account for the majority of captured volume in this run, with average wait times trending higher at riverside piers than at central Underground stations.
+1. Calls the TfL Unified API for a list of stations you choose
+2. Stores each arrival prediction as a row in `fact_arrivals`
+3. Automatically builds out `dim_line`, `dim_station`, and `dim_time`
+4. Every time you run it, you add a new snapshot — run it every 5-15 minutes
+   over a few days and you'll have a real time-series dataset to analyze
 
 ## Setup
 
 ```bash
-git clone <this-repo>
-cd tfl-dashboard
-pip install -r requirements.txt --break-system-packages
-
+cd tfl_dashboard
+pip install -r requirements.txt --break-system-packages   # or use a venv
 cp config.py.example config.py
-# add your free TfL API key (https://api-portal.tfl.gov.uk/) to config.py
-# and customize STATION_NAMES to the stops you want to track
-
-python fetch_tfl.py          # test a single run
-python export_to_csv.py      # export tables for Power BI
 ```
 
-Then schedule `fetch_tfl.py` to run every 10–15 minutes (Task Scheduler on Windows, cron on Mac/Linux) and let it collect for a few days before analyzing — the more snapshots collected, the more meaningful the time-based patterns become.
+1. Get a free API key: https://api-portal.tfl.gov.uk/ (instant, no approval wait)
+2. Open `config.py` and paste your key into `APP_KEY`
+3. Pick your stations. The 5 in `config.py.example` are placeholders — verify
+   the real StopPoint IDs for stations you want using:
+   `https://api.tfl.gov.uk/StopPoint/Search/{station name}`
+   e.g. `https://api.tfl.gov.uk/StopPoint/Search/Oxford%20Circus`
+   (this returns a JSON list — grab the `naptanId` for the entry you want)
 
-Open `TFL.pbix` in Power BI Desktop, or load the CSVs from `/exports` via **Get Data → Text/CSV**, and set up the relationships described in the data model above.
+## Run it once to test
 
-## Known limitations
+```bash
+python fetch_tfl.py
+```
 
-- **"Wait time," not "delay":** TfL's live feed reports predicted time-to-arrival, not a comparison against a published schedule — so this measures service frequency/wait time rather than true delay against a timetable.
-- **Mode coverage depends on station name matches:** searching by station name can pull in nearby stops across multiple modes (e.g. river-bus piers sharing a name with a nearby Underground station), which can skew mode-level comparisons. Worth filtering `MODE_FILTER` in `config.py` if you want a single-mode analysis.
+You should see output like:
+```
+[2026-08-24 ...] 940GZZLUOXC: 24 arrivals stored
+Done. 120 total records inserted into tfl_data.db
+```
 
-## What this demonstrates
+If you get an error, check:
+- Your API key is correct in `config.py`
+- Your station IDs are valid (test the URL directly in a browser first)
+- A `401` or `403` response means TfL rejected the key. Create or activate a
+   key in the TfL API portal, replace `APP_KEY`, and run the script again. Do
+   not publish the key; rotate it if it has been exposed.
 
-- REST API integration and ETL pipeline design
-- Dimensional (star schema) data modeling
-- DAX measures and time-intelligence calculations
-- Automated, scheduled data collection (not a one-off static dataset)
-- BI dashboard design: KPIs, drill-downs, and interactive filtering
+## Schedule it to run automatically (this is what makes the data "live")
+
+**On Mac/Linux (cron):**
+```bash
+crontab -e
+# add this line to run every 10 minutes:
+*/10 * * * * cd /full/path/to/tfl_dashboard && /usr/bin/python3 fetch_tfl.py >> log.txt 2>&1
+```
+
+**On Windows (Task Scheduler):**
+Create a Basic Task → Trigger: Daily, repeat every 10 minutes → Action: start
+`python.exe` with argument `fetch_tfl.py` and "Start in" set to this folder.
+
+Let it run for at least 2-3 days before building your dashboard — you want
+enough history to show trends (peak vs off-peak, weekday vs weekend, etc.)
+
+## Connecting to Power BI
+
+1. Power BI Desktop → Get Data → **Database → SQLite database** (you may need
+   to install the SQLite ODBC driver first — search "SQLite ODBC driver
+   Windows" if the connector doesn't appear)
+2. Point it at `tfl_data.db`
+3. Load all four tables (`fact_arrivals`, `dim_line`, `dim_station`, `dim_time`)
+4. In Power BI's Model view, create relationships:
+   - `fact_arrivals.line_id` → `dim_line.line_id`
+   - `fact_arrivals.station_id` → `dim_station.station_id`
+   - `fact_arrivals.time_id` → `dim_time.time_id`
+5. Set the dashboard to refresh (Power BI Desktop refreshes on demand; for
+   scheduled refresh you'd need Power BI Service + a gateway, which is
+   optional — for a portfolio piece, manual refresh + screenshots over time
+   is enough to show it's "live")
+
+## Connecting to Tableau
+
+Tableau Public/Desktop → Connect → **More → SQLite** (may need the SQLite
+ODBC/JDBC driver depending on your OS) → same relationship setup as above.
+
+## Suggested KPIs / visuals once you have data
+
+- **Average time-to-station by line** — which lines run more/less predictably
+- **Arrivals volume by hour** — peak vs off-peak patterns
+- **Busiest stations** — count of arrivals tracked per station
+- **Day-of-week patterns** — weekday vs weekend service levels
+- A **time-series line chart** showing arrival volume over the days you
+  collected data — this is your strongest "look, it's really live" visual
+
+## Notes for your resume/portfolio writeup
+
+Frame this project as: *"Built an end-to-end BI pipeline ingesting live
+transit data via REST API into a dimensional (star schema) SQLite database,
+with a Power BI dashboard tracking service reliability KPIs."* That one line
+covers API integration, data modeling, and BI tooling — the three things a
+BI Analyst JD usually asks for.

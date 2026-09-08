@@ -1,0 +1,1148 @@
+{
+  "Oxford Circus": [
+    {
+      "id": "940GZZLUOXC",
+      "name": "Oxford Circus Underground Station",
+      "modes": [
+        "tube"
+      ]
+    },
+    {
+      "id": "490000173RC",
+      "name": "Oxford Circus Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490000173RG",
+      "name": "Oxford Circus Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490000173Z",
+      "name": "Oxford Circus Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00015204",
+      "name": "Oxford Circus Station  / John Lewis",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G000691",
+      "name": "Great Titchfield St / Oxford Circus Stn",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G000692",
+      "name": "John Prince's Street / Oxford Circus",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G000693",
+      "name": "Margaret Street / Oxford Circus",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G000694",
+      "name": "Oxford Circus Stn  / Margaret Street",
+      "modes": [
+        "bus"
+      ]
+    }
+  ],
+  "King's Cross St. Pancras": [
+    {
+      "id": "HUBKGX",
+      "name": "King's Cross & St Pancras International",
+      "modes": [
+        "bus",
+        "national-rail",
+        "tube",
+        "international-rail"
+      ]
+    }
+  ],
+  "Waterloo": [
+    {
+      "id": "HUBWAT",
+      "name": "Waterloo",
+      "modes": [
+        "tube",
+        "bus",
+        "national-rail"
+      ]
+    },
+    {
+      "id": "930GWMP",
+      "name": "London Eye Waterloo Pier",
+      "modes": [
+        "river-bus"
+      ]
+    },
+    {
+      "id": "910GWLOE",
+      "name": "London Waterloo East Rail Station",
+      "modes": [
+        "national-rail"
+      ]
+    },
+    {
+      "id": "910GWLOO",
+      "name": "Waterloo (Merseyside) Rail Station",
+      "modes": [
+        "national-rail"
+      ]
+    },
+    {
+      "id": "40004406067A",
+      "name": "Waterloo Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "400G4406067B",
+      "name": "Waterloo Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490000254Z",
+      "name": "Waterloo Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00014274",
+      "name": "Waterloo Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00014275",
+      "name": "Waterloo Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G000819",
+      "name": "Waterloo Bridge / South Bank",
+      "modes": [
+        "bus"
+      ]
+    }
+  ],
+  "Victoria": [
+    {
+      "id": "HUBVIC",
+      "name": "Victoria",
+      "modes": [
+        "bus",
+        "national-rail",
+        "tube"
+      ]
+    },
+    {
+      "id": "HUBRVC",
+      "name": "Royal Victoria",
+      "modes": [
+        "cable-car",
+        "dlr",
+        "bus"
+      ]
+    },
+    {
+      "id": "910GMNCRVIC",
+      "name": "Manchester Victoria Rail Station",
+      "modes": [
+        "national-rail"
+      ]
+    },
+    {
+      "id": "910GSTBDXVR",
+      "name": "St Budeaux Victoria Road Rail Station",
+      "modes": [
+        "national-rail"
+      ]
+    },
+    {
+      "id": "910GSTHVIC",
+      "name": "Southend Victoria Rail Station",
+      "modes": [
+        "national-rail"
+      ]
+    },
+    {
+      "id": "400G4409334A",
+      "name": "Victoria Almshouses",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490000248G",
+      "name": "Victoria Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490000248H",
+      "name": "Victoria Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490000248N2",
+      "name": "Victoria Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490000248S",
+      "name": "Victoria Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490000248YZ",
+      "name": "Victoria Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490000248ZZ",
+      "name": "Victoria Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490002139ZZ",
+      "name": "Victoria Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490010323C",
+      "name": "North Cheam / Queen Victoria",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490010323D",
+      "name": "North Cheam / Queen Victoria",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490014050R",
+      "name": "Victoria Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00000335",
+      "name": "Coombe Lane West / New Victoria Hospital",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00002238",
+      "name": "Victoria Road / Erith",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00003154",
+      "name": "Victoria Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00003314",
+      "name": "Mare Street / Victoria Park Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00004436",
+      "name": "Victoria and Albert Museum",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G000045",
+      "name": "Victoria Road (New Barnet)",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00006025",
+      "name": "Victoria Park",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00006313",
+      "name": "Victoria Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00009432",
+      "name": "Victoria Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G000095",
+      "name": "Victoria Road / Surbiton Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00010121",
+      "name": "Munday Road / Royal Victoria",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00010265",
+      "name": "New Victoria Hospital",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00011201",
+      "name": "Victoria Dock Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00011704",
+      "name": "Woolwich Road / Victoria Way",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00011773",
+      "name": "Royal Victoria Gardens",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00011823",
+      "name": "Victoria Park Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00014048",
+      "name": "Victoria & Albert Museum",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00014055",
+      "name": "Victoria Gate",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00014056",
+      "name": "Victoria Recreation Ground",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00014059",
+      "name": "Victoria Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00014060",
+      "name": "Victoria Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00014061",
+      "name": "Victoria Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00014062",
+      "name": "Victoria Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00014063",
+      "name": "Victoria Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00014064",
+      "name": "Victoria Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00014065",
+      "name": "Victoria Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00014074",
+      "name": "Victoria Street",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00014075",
+      "name": "Charlton Road / Victoria Way",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00015226",
+      "name": "Victoria Way",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G000193",
+      "name": "Victoria Road / Church Street",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00020189",
+      "name": "Victoria Road / Lavender Fields",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00020352",
+      "name": "Victoria Recreation Ground",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G000408",
+      "name": "Feltham Station  / Victoria Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G000429",
+      "name": "Queen's Park Stn   / Victoria Road",
+      "modes": [
+        "bus"
+      ]
+    }
+  ],
+  "Liverpool Street": [
+    {
+      "id": "HUBLST",
+      "name": "Liverpool Street",
+      "modes": [
+        "elizabeth-line",
+        "national-rail",
+        "overground",
+        "tube",
+        "bus"
+      ]
+    },
+    {
+      "id": "490000138E",
+      "name": "Liverpool Street Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490000138F",
+      "name": "Liverpool Street Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490000138K",
+      "name": "Liverpool Street Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490000138L",
+      "name": "Liverpool Street Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490000138LS",
+      "name": "Liverpool Street Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490000138N",
+      "name": "Liverpool Street Station",
+      "modes": [
+        "bus"
+      ]
+    }
+  ],
+  "Stratford": [
+    {
+      "id": "HUBSRA",
+      "name": "Stratford",
+      "modes": [
+        "overground",
+        "international-rail",
+        "tube",
+        "elizabeth-line",
+        "dlr",
+        "bus",
+        "national-rail"
+      ]
+    },
+    {
+      "id": "940GZZDLSHS",
+      "name": "Stratford High Street DLR Station",
+      "modes": [
+        "dlr"
+      ]
+    },
+    {
+      "id": "940GZZDLSIT",
+      "name": "Stratford International DLR Station",
+      "modes": [
+        "dlr"
+      ]
+    },
+    {
+      "id": "910GFSTR",
+      "name": "Fenny Stratford Rail Station",
+      "modes": [
+        "national-rail"
+      ]
+    },
+    {
+      "id": "910GSOAV",
+      "name": "Stratford-upon-Avon Rail Station",
+      "modes": [
+        "national-rail"
+      ]
+    },
+    {
+      "id": "910GSOAVPWY",
+      "name": "Stratford-upon-Avon Parkway Rail Station",
+      "modes": [
+        "national-rail"
+      ]
+    },
+    {
+      "id": "910GSTFODOM",
+      "name": "Stratford International Rail Station",
+      "modes": [
+        "national-rail"
+      ]
+    },
+    {
+      "id": "490002268YY",
+      "name": "Stratford International Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490002268ZZ",
+      "name": "Stratford International Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490018554C",
+      "name": "Stratford International Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490018554E",
+      "name": "Stratford International Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00002436",
+      "name": "Stratford Centre / Moorfields Eye Hosp",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00004815",
+      "name": "Stratford High St / Carpenters Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00006045",
+      "name": "Stratford Park",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00012902",
+      "name": "Stratford Library",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00012903",
+      "name": "Stratford Broadway",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00013391",
+      "name": "U E L Stratford Campus",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00014215",
+      "name": "Stratford High St Stn  / Carpenters Rd",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00015013",
+      "name": "Stratford School",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G000200",
+      "name": "Stratford Road",
+      "modes": [
+        "bus"
+      ]
+    }
+  ],
+  "Camden Town": [
+    {
+      "id": "940GZZLUCTN",
+      "name": "Camden Town Underground Station",
+      "modes": [
+        "tube"
+      ]
+    },
+    {
+      "id": "490000036S",
+      "name": "Camden Town Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490015041X",
+      "name": "Camden Town Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490015041Y",
+      "name": "Camden Town Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490015531S",
+      "name": "Camden Town Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00002330",
+      "name": "Camden Town Station  / Bayham Street",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00019166",
+      "name": "Camden Town / Camden Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00019167",
+      "name": "Camden Town Station / Camden Street",
+      "modes": [
+        "bus"
+      ]
+    }
+  ],
+  "Bank": [
+    {
+      "id": "HUBBAN",
+      "name": "Bank",
+      "modes": [
+        "tube",
+        "dlr",
+        "bus"
+      ]
+    },
+    {
+      "id": "940GZZLUEMB",
+      "name": "Embankment Underground Station",
+      "modes": [
+        "tube"
+      ]
+    },
+    {
+      "id": "930GEMB",
+      "name": "Embankment Pier",
+      "modes": [
+        "river-bus"
+      ]
+    },
+    {
+      "id": "930GMBK",
+      "name": "Millbank Pier",
+      "modes": [
+        "river-bus"
+      ]
+    },
+    {
+      "id": "930GSWK",
+      "name": "Bankside Pier",
+      "modes": [
+        "river-bus"
+      ]
+    },
+    {
+      "id": "910GBNKHALL",
+      "name": "Bank Hall Rail Station",
+      "modes": [
+        "national-rail"
+      ]
+    },
+    {
+      "id": "910GCLYBANK",
+      "name": "Clydebank Rail Station",
+      "modes": [
+        "national-rail"
+      ]
+    },
+    {
+      "id": "910GESKBANK",
+      "name": "Eskbank Rail Station",
+      "modes": [
+        "national-rail"
+      ]
+    },
+    {
+      "id": "910GGBNK",
+      "name": "Greenbank Rail Station",
+      "modes": [
+        "national-rail"
+      ]
+    },
+    {
+      "id": "910GKTBK",
+      "name": "Kents Bank Rail Station",
+      "modes": [
+        "national-rail"
+      ]
+    },
+    {
+      "id": "910GLADYBNK",
+      "name": "Ladybank Rail Station",
+      "modes": [
+        "national-rail"
+      ]
+    },
+    {
+      "id": "910GLGBK",
+      "name": "Langbank Rail Station",
+      "modes": [
+        "national-rail"
+      ]
+    },
+    {
+      "id": "910GSTHBANK",
+      "name": "South Bank Rail Station",
+      "modes": [
+        "national-rail"
+      ]
+    },
+    {
+      "id": "910GTWDBANK",
+      "name": "Tweedbank Rail Station",
+      "modes": [
+        "national-rail"
+      ]
+    },
+    {
+      "id": "910GWRGTNBQ",
+      "name": "Warrington Bank Quay Rail Station",
+      "modes": [
+        "national-rail"
+      ]
+    },
+    {
+      "id": "490008915S2",
+      "name": "Millbank Millennium Pier",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00002429",
+      "name": "East Bank",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00002446",
+      "name": "Cannon St Stn   / Bank Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00003579",
+      "name": "Bankhurst Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00003581",
+      "name": "Bankside Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G000037",
+      "name": "Warbank Crescent",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00004390",
+      "name": "Brocklebank Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00004446",
+      "name": "Brookbank Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00007550",
+      "name": "Vauxhall Bridge / Millbank",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00007596",
+      "name": "Poultry / Bank Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00009006",
+      "name": "Laurel Bank Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00009197",
+      "name": "Sorrel Bank",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00009729",
+      "name": "Maybank Avenue",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00009730",
+      "name": "Maybank Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00009881",
+      "name": "Millbank",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00010116",
+      "name": "Maybank Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00011772",
+      "name": "Rosebank Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00012059",
+      "name": "Shell Road / Brookbank Road",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00013379",
+      "name": "Sunnybank",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00015429",
+      "name": "Springbank Road / Hither Green Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00019979",
+      "name": "Thames Bank",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00023115",
+      "name": "Tambank",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G000255",
+      "name": "Tate Britain / Millbank Millen'm Pier",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G000753",
+      "name": "Southwark Bridge / Bankside Pier",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G000819",
+      "name": "Waterloo Bridge / South Bank",
+      "modes": [
+        "bus"
+      ]
+    }
+  ],
+  "Canary Wharf": [
+    {
+      "id": "HUBCAW",
+      "name": "Canary Wharf",
+      "modes": [
+        "elizabeth-line",
+        "dlr",
+        "tube",
+        "bus"
+      ]
+    },
+    {
+      "id": "930GCAW",
+      "name": "Canary Wharf Pier",
+      "modes": [
+        "river-bus"
+      ]
+    },
+    {
+      "id": "490000038F",
+      "name": "Canary Wharf Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490000038G",
+      "name": "Canary Wharf Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00016729",
+      "name": "Canada Square South / Canary Wharf Stn",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G000825",
+      "name": "Westferry Circus / Canary Wharf Pier",
+      "modes": [
+        "bus"
+      ]
+    }
+  ],
+  "Paddington": [
+    {
+      "id": "HUBPAD",
+      "name": "Paddington",
+      "modes": [
+        "national-rail",
+        "bus",
+        "tube",
+        "elizabeth-line"
+      ]
+    },
+    {
+      "id": "490001221F",
+      "name": "Paddington Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490001221H",
+      "name": "Paddington Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490001221SZ",
+      "name": "Paddington Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00004040",
+      "name": "Bishop's Bridge / Paddington Station",
+      "modes": [
+        "bus"
+      ]
+    },
+    {
+      "id": "490G00010712",
+      "name": "Paddington Close",
+      "modes": [
+        "bus"
+      ]
+    }
+  ]
+}
